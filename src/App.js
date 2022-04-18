@@ -85,7 +85,11 @@ function App() {
         <h1>Todo List</h1>
       </header>
       {/* Renders when todoselected is true -- Renders single todo on when single todo is clicked */}
-      <SingleTodo setTodoSelected={setTodoSelected} todo={singleTodo} />
+      <SingleTodo
+        setSearchTerm={setSearchTerm}
+        setTodoSelected={setTodoSelected}
+        todo={singleTodo}
+      />
     </div>
   );
 }

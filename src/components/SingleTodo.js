@@ -1,9 +1,10 @@
 import React from "react";
 
-const SingleTodo = ({ setTodoSelected, todo }) => {
+const SingleTodo = ({ setSearchTerm, setTodoSelected, todo }) => {
   //updated todoselected state to render all todo
   const renderAllTodos = () => {
     setTodoSelected(false);
+    setSearchTerm("");
   };
 
   /////////////////////////////////////////
