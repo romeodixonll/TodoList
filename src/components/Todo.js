@@ -13,7 +13,7 @@ const Todo = ({
   const deleteHandler = () => {
     setTodos(todos.filter((el) => el.id !== id));
   };
-////////////////////////////////////////
+  ////////////////////////////////////////
   //Button for single todo toggle completed variable todo
   const completeHandler = () => {
     setTodos(
@@ -28,7 +28,7 @@ const Todo = ({
       })
     );
   };
-/////////////////////////////////////////
+  /////////////////////////////////////////
   //Update state todoselected to render single todo
   //pass object to state for single todo component use
   const renderSingleTodo = () => {

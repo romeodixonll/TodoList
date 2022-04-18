@@ -13,7 +13,7 @@ const Form = ({
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
-/////////////////////////////////////
+  /////////////////////////////////////
   //push added todo to todo list state
   const submitTodoHandler = (e) => {
     e.preventDefault();
@@ -24,17 +24,17 @@ const Form = ({
     //clear input state
     setInputText("");
   };
-//////////////////////////////////////////////
+  //////////////////////////////////////////////
   //updated filter state to show completed or uncompleted
   const statusHandler = (e) => {
     setStatus(e.target.value);
   };
-/////////////////////////////////////////////
+  /////////////////////////////////////////////
   //updated sort state to sort alphabetical order
   const sortHandler = (e) => {
     setSortBy(e.target.value);
   };
-///////////////////////////////////////////
+  ///////////////////////////////////////////
   return (
     <div className="form">
       <form>
@@ -45,7 +45,7 @@ const Form = ({
           type="text"
           className="todo-input"
         />
-        
+
         <button
           onClick={submitTodoHandler}
           className="todo-button"

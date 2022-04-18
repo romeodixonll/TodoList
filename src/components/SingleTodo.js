@@ -1,8 +1,7 @@
 import React from "react";
 
 const SingleTodo = ({ setTodoSelected, todo }) => {
-
-    //updated todoselected state to render all todo
+  //updated todoselected state to render all todo
   const renderAllTodos = () => {
     setTodoSelected(false);
   };

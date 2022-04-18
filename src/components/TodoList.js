@@ -40,7 +40,7 @@ const TodoList = ({
             }
           })
           .map((todo) => (
-            // Map each todo with Todo components 
+            // Map each todo with Todo components
             <Todo
               setTodos={setTodos}
               todos={todos}

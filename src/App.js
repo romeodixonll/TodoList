@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 import SingleTodo from "./components/SingleTodo";
 
 function App() {
-
   //Fetch data from site to render into todo list
   useEffect(() => {
     getTodos();
@@ -19,8 +18,7 @@ function App() {
       setTodos(data);
     }
   };
-//////////////////////////////////////////////////////
-
+  //////////////////////////////////////////////////////
 
   //State variables
   const [inputText, setInputText] = useState("");
@@ -33,7 +31,7 @@ function App() {
   const [singleTodo, setSingleTodo] = useState({});
   /////////////////////////////////////////////////////////
 
-  //Use effect for filter functions 
+  //Use effect for filter functions
   useEffect(() => {
     filterHandler();
   }, [todos, status]);
@@ -51,15 +49,15 @@ function App() {
         break;
     }
   };
-////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////
 
-
-//todoselected(Boolean) -- State changed when clicked on todo single row  
+  //todoselected(Boolean) -- State changed when clicked on todo single row
   return !todoSelected ? (
     <div className="App">
       <header>
         <h1>Todo List</h1>
       </header>
+      {/* Renders when todoselected is false */}
       <Form
         inputText={inputText}
         todos={todos}
@@ -86,6 +84,7 @@ function App() {
       <header>
         <h1>Todo List</h1>
       </header>
+      {/* Renders when todoselected is true -- Renders single todo on when single todo is clicked */}
       <SingleTodo setTodoSelected={setTodoSelected} todo={singleTodo} />
     </div>
   );
